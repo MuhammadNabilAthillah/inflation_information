@@ -9,6 +9,6 @@ class Data extends Model
 {
     use HasFactory;
 
-    protected $table = 'sektor';
+    protected $table = 'data';
     protected $guarded = [];
 }

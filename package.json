@@ -6,6 +6,7 @@
         "dev": "vite"
     },
     "devDependencies": {
+        "@tailwindcss/forms": "^0.5.10",
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
@@ -14,6 +15,20 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
+        "@floating-ui/dom": "^1.6.13",
+        "@preline/accordion": "^3.0.0",
+        "@preline/collapse": "^3.0.0",
+        "@preline/dropdown": "^3.0.1",
+        "@preline/overlay": "^3.0.0",
+        "@preline/scroll-nav": "^3.0.0",
+        "@preline/scrollspy": "^3.0.0",
+        "@preline/select": "^3.0.0",
+        "@preline/stepper": "^3.0.0",
+        "@preline/tabs": "^3.0.0",
+        "@preline/tooltip": "^3.0.0",
+        "@preline/tree-view": "^3.0.0",
+        "datatables.net-dt": "^2.2.2",
+        "jquery": "^3.7.1",
         "preline": "^3.0.1"
     }
 }

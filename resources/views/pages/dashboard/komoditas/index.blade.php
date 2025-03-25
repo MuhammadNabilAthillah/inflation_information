@@ -4,10 +4,10 @@
     <div class="w-full" style="padding: 2rem; padding-left: 18rem;">
         <div class="bg-white p-6 rounded-lg shadow-md flex flex-col gap-3">
             <div class="flex justify-between items-center">
-                <h1 class="font-bold" style="font-size: 20px;">Sektors</h1>
-                <a href="{{ route('dashboard.sektor.create') }}" type="button"
+                <h1 class="font-bold" style="font-size: 20px;">Komoditas</h1>
+                <a href="{{ route('dashboard.komoditas.create') }}" type="button"
                     class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white cursor-pointer hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                    Tambah Sektor
+                    Tambah Komoditas
                 </a>
             </div>
             <div class="p-1.5 w-full inline-block align-middle">
@@ -46,7 +46,7 @@
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200">
-                                @foreach ($sektors as $index => $item)
+                                @foreach ($komoditas as $index => $item)
                                     <tr>
                                         <td class="py-3 ps-4">
                                             <div class="flex items-center justify-center h-5">
@@ -55,9 +55,9 @@
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{{ $item->nama  }}</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium flex justify-center gap-2">
-                                            <a href="{{ route('dashboard.sektor.edit', ['sektor' => $item->id]) }}" type="button"
+                                            <a href="{{ route('dashboard.komoditas.edit', ['komodita' => $item->id]) }}" type="button"
                                                 class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 focus:outline-hidden focus:text-blue-800 disabled:opacity-50 disabled:pointer-events-none">Update</a>
-                                            <a href="{{ route('dashboard.sektor.destroy', $item->id) }}" data-confirm-delete="true" type="button"
+                                            <a href="{{ route('dashboard.komoditas.destroy', $item->id) }}" data-confirm-delete="true" type="button"
                                                 class="inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 focus:outline-hidden focus:text-blue-800 disabled:opacity-50 disabled:pointer-events-none">Delete</a>
                                         </td>
                                     </tr>
@@ -66,7 +66,7 @@
                         </table>
                     </div>
                     <div class="py-1 px-4 w-full flex justify-end">
-                        {{ $sektors->links() }}
+                        {{ $komoditas->links() }}
                     </div>
                 </div>
             </div>

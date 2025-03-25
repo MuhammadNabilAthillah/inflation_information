@@ -9,6 +9,6 @@ class Klasifikasi extends Model
 {
     use HasFactory;
 
-    protected $table = 'sektor';
+    protected $table = 'klasifikasi';
     protected $guarded = [];
 }

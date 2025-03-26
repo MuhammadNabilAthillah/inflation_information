@@ -19,12 +19,14 @@
                             <span
                                 class="px-4 inline-flex items-center min-w-fit rounded-s-md border border-e-0 border-gray-200 bg-gray-50 text-sm text-gray-500">Name</span>
                             <input type="text" name="name"
+                            placeholder="Masukkan nama user"
                                 class="py-1.5 sm:py-2 px-3 pe-11 block w-full border-gray-200 rounded-e-lg sm:text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" value="{{ $user->name }}" required>
                         </div>
                         <div class="flex rounded-lg w-full">
                             <span
                                 class="px-4 inline-flex items-center min-w-fit rounded-s-md border border-e-0 border-gray-200 bg-gray-50 text-sm text-gray-500">Email</span>
                             <input type="email" name="email"
+                            placeholder="Masukkan email user"
                                 class="py-1.5 sm:py-2 px-3 pe-11 block w-full border-gray-200 rounded-e-lg sm:text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" value="{{ $user->email }}" required>
                         </div>
                     </div>

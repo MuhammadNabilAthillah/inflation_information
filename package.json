@@ -27,8 +27,11 @@
         "@preline/tabs": "^3.0.0",
         "@preline/tooltip": "^3.0.0",
         "@preline/tree-view": "^3.0.0",
+        "apexcharts": "^4.5.0",
         "datatables.net-dt": "^2.2.2",
         "jquery": "^3.7.1",
-        "preline": "^3.0.1"
+        "lodash": "^4.17.21",
+        "preline": "^3.0.1",
+        "vanilla-calendar-pro": "^3.0.3"
     }
 }

@@ -21,9 +21,9 @@ return new class extends Migration
             $table->unsignedBigInteger('id_sektor');
             $table->foreign('id_sektor')->references('id')->on('sektor');
             $table->unsignedBigInteger('id_komoditas');
-            $table->foreign('id_komoditas')->references('id')->on('sektor');
+            $table->foreign('id_komoditas')->references('id')->on('komoditas');
             $table->unsignedBigInteger('id_klasifikasi');
-            $table->foreign('id_klasifikasi')->references('id')->on('sektor');
+            $table->foreign('id_klasifikasi')->references('id')->on('klasifikasi');
             $table->timestamps();
         });
     }

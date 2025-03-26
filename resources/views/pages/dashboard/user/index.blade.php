@@ -77,3 +77,17 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#hs-table-with-pagination-search").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("tbody tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            });
+        });
+    });
+</script>
+@endpush

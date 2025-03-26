@@ -23,10 +23,12 @@ Route::prefix('auth')->name('auth.')->controller(AuthenticationController::class
 Route::middleware(Authentication::class)->prefix('dashboard')->name('dashboard.')->group(function () {
     Route::controller(DashboardController::class)->group(function () {
         Route::get('/', 'index')->name('index');
+        Route::get('/getChartData', 'getChartData')->name('getChartData');
+    });
         Route::resource('user', UserController::class);
         Route::resource('sektor', SektorController::class);
         Route::resource('komoditas', KomoditasController::class);
         Route::resource('klasifikasi', KlasifikasiController::class);
         Route::resource('data', DataController::class);
-    });
+        Route::get('/export', [DataController::class, 'export'])->name('export');
 });

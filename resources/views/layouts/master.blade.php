@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @extends('includes.head')
+    @include('includes.head')
 </head>
 <body class="bg-gray-100 flex h-full items-center py-16">
 @include('sweetalert::alert')
@@ -10,6 +10,7 @@
     @yield('content')
 </main>
     
-    @extends('includes.scripts')
+    @include('includes.scripts')
+    @stack('scripts')
 </body>
 </html>

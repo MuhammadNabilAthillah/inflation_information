@@ -10,15 +10,13 @@
 <!-- End Navigation Toggle -->
 
 <!-- Sidebar -->
-<div id="hs-sidebar-footer"
-    class="hs-overlay [--auto-close:lg] lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 w-64
+<div id="hs-sidebar-footer" class="hs-overlay [--auto-close:lg] lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 w-64
 hs-overlay-open:translate-x-0
 -translate-x-full transition-all duration-300 transform
 h-full
 hidden
 fixed top-0 start-0 bottom-0 z-60
-bg-white border-e border-gray-200"
-    role="dialog" tabindex="-1" aria-label="Sidebar">
+bg-white border-e border-gray-200" role="dialog" tabindex="-1" aria-label="Sidebar">
     <div class="relative flex flex-col h-full max-h-full ">
         <!-- Header -->
         <header class="p-4 flex justify-between items-center gap-x-2">
@@ -63,8 +61,7 @@ bg-white border-e border-gray-200"
                     </li>
 
                     <li>
-                        <a href="{{ route('dashboard.user.index') }}"
-                            class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
+                        <a href="{{ route('dashboard.user.index') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
                     {{ request()->routeIs('dashboard.user.*') ? 'bg-gray-100' : '' }}">
                             <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -78,8 +75,7 @@ bg-white border-e border-gray-200"
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('dashboard.sektor.index') }}"
-                            class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
+                        <a href="{{ route('dashboard.sektor.index') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
                     {{ request()->routeIs('dashboard.sektor.*') ? 'bg-gray-100' : '' }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-building" viewBox="0 0 16 16">
@@ -92,8 +88,7 @@ bg-white border-e border-gray-200"
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('dashboard.klasifikasi.index') }}"
-                            class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
+                        <a href="{{ route('dashboard.klasifikasi.index') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
                     {{ request()->routeIs('dashboard.klasifikasi.*') ? 'bg-gray-100' : '' }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-clipboard-minus" viewBox="0 0 16 16">
@@ -108,8 +103,7 @@ bg-white border-e border-gray-200"
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('dashboard.komoditas.index') }}"
-                            class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
+                        <a href="{{ route('dashboard.komoditas.index') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
                     {{ request()->routeIs('dashboard.komoditas.*') ? 'bg-gray-100' : '' }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-bank2" viewBox="0 0 16 16">
@@ -117,6 +111,17 @@ bg-white border-e border-gray-200"
                                     d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916zM12.375 6v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2M.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1z" />
                             </svg>
                             Komoditas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('dashboard.data.index') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100
+                    {{ request()->routeIs('dashboard.data.*') ? 'bg-gray-100' : '' }}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1zm1 12h2V2h-2zm-3 0V7H7v7zm-5 0v-3H2v3z" />
+                            </svg>
+                            Data
                         </a>
                     </li>
                 </ul>
@@ -135,9 +140,9 @@ bg-white border-e border-gray-200"
                         src="https://images.unsplash.com/photo-1734122415415-88cb1d7d5dc0?q=80&w=320&h=320&auto=format&fit=facearea&facepad=3&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Avatar">
                     {{ Auth::user()->name }}
-                    <svg class="shrink-0 size-3.5 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="shrink-0 size-3.5 ms-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
                         <path d="m7 15 5 5 5-5" />
                         <path d="m7 9 5-5 5 5" />
                     </svg>
@@ -145,8 +150,7 @@ bg-white border-e border-gray-200"
 
                 <!-- Account Dropdown -->
                 <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 w-60 transition-[opacity,margin] duration opacity-0 hidden z-20 bg-white border border-gray-200 rounded-lg shadow-lg"
-                    role="menu" aria-orientation="vertical"
-                    aria-labelledby="hs-sidebar-footer-example-with-dropdown">
+                    role="menu" aria-orientation="vertical" aria-labelledby="hs-sidebar-footer-example-with-dropdown">
                     <div class="p-1">
                         <a class="flex items-center gap-x-3 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-100"
                             href="#">

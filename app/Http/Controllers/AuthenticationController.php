@@ -35,4 +35,10 @@ class AuthenticationController extends Controller
             return redirect()->back();
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/auth/login');
+    }
 }

@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::prefix('auth')->name('auth.')->controller(AuthenticationController::class)->group(function () {
     Route::get('login', 'login')->name('login')->middleware(AuthCheck::class);
     Route::post('login', 'loginAction')->name('loginAction')->middleware(AuthCheck::class);
+    Route::get('logout', 'logout')->name('logout')->middleware(Authentication::class);
 });
 
 Route::middleware(Authentication::class)->prefix('dashboard')->name('dashboard.')->group(function () {

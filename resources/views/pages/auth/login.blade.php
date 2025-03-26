@@ -4,7 +4,8 @@
 <div class="w-full max-w-md mx-auto p-6">
     <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-2xs  ">
         <div class="p-4 sm:p-7">
-            <div class="text-center">
+            <div class="text-center px-4 flex flex-col gap-4">
+                <img src="{{ asset('/assets/img/logo.png') }}" alt="" class="w-full">
                 <h1 class="block text-2xl font-bold text-gray-800 ">Sign in</h1>
                 <!-- <p class="mt-2 text-sm text-gray-600 ">
                     Don't have an account yet?

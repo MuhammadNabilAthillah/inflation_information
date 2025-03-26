@@ -20,8 +20,10 @@ bg-white border-e border-gray-200" role="dialog" tabindex="-1" aria-label="Sideb
     <div class="relative flex flex-col h-full max-h-full ">
         <!-- Header -->
         <header class="p-4 flex justify-between items-center gap-x-2">
-            <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80" href="#"
-                aria-label="Brand">Brand</a>
+            <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 w-full" href="{{ route('dashboard.index') }}"
+                aria-label="Brand">
+                <img src="{{ asset('/assets/img/logo.png') }}" alt="" class="w-full">
+            </a>
 
             <div class="lg:hidden -me-2">
                 <!-- Close Button -->
@@ -153,7 +155,7 @@ bg-white border-e border-gray-200" role="dialog" tabindex="-1" aria-label="Sideb
                     role="menu" aria-orientation="vertical" aria-labelledby="hs-sidebar-footer-example-with-dropdown">
                     <div class="p-1">
                         <a class="flex items-center gap-x-3 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden focus:bg-gray-100"
-                            href="#">
+                            href="{{ route('auth.logout') }}">
                             Sign out
                         </a>
                     </div>
